@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  a(href='/') back
+  form(method='POST' action='/new')
+    input(type='text' name='text' placeholder='Message' required='true')
+    input(type='text' name='user' placeholder='User' required='true')
+    input(type='submit' class='btn' value='Submit')
